@@ -44,8 +44,8 @@ for result in results:
         report.append("Approve")
     elif result["confidence"] == "MEDIUM":
         report.append("Review Recommended")
-else:
-    report.append("Human Review Required")
+    else:
+        report.append("Human Review Required")
 
 report.append("")
 report.append("-" * 50)

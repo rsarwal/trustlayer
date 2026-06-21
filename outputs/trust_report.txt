@@ -107,6 +107,5 @@ Evidence:
 
 Recommendation:
 Approve
-Human Review Required
 
 --------------------------------------------------
