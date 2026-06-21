@@ -1,0 +1,66 @@
+TRUSTLAYER REPORT
+==================================================
+
+Records Processed: 10
+HIGH CONFIDENCE: 6
+MEDIUM CONFIDENCE: 4
+LOW CONFIDENCE: 0
+
+==================================================
+
+Store: Downtown Chicago
+Confidence: HIGH
+Score: 100
+
+
+Store: Brooklyn Heights
+Confidence: MEDIUM
+Score: 80
+
+
+Store: LA Westside
+Confidence: HIGH
+Score: 100
+
+
+Store: Miami Beach
+Confidence: MEDIUM
+Score: 80
+
+
+Store: Austin Downtown
+Confidence: HIGH
+Score: 100
+
+
+Store: Seattle Pike
+Confidence: HIGH
+Score: 100
+
+
+Store: Downtown Chicago 2
+Confidence: HIGH
+Score: 100
+
+
+Store: Phoenix Central
+Confidence: MEDIUM
+Score: 85
+
+
+Store: Boston Back Bay
+Confidence: MEDIUM
+Score: 80
+
+
+Store: Denver Union
+Confidence: HIGH
+Score: 100
+
+Evidence:
+- No issues detected
+
+Recommendation:
+Approve
+
+--------------------------------------------------

@@ -1,51 +1,47 @@
 import pandas as pd
 
-stores = pd.read_csv("sample-data/stores.csv")
+def score_stores():
 
-for index, row in stores.iterrows():
+    stores = pd.read_csv("sample-data/stores.csv")
 
-    score = 100
-    issues = []
+    results = []
 
-    # Missing ZIP code
-    if pd.isna(row["zip code"]):
-        score -= 20
-        issues.append("Missing ZIP code")
+    for index, row in stores.iterrows():
 
-    # Missing franchise owner
-    if pd.isna(row["franchise_owner"]):
-        score -= 20
-        issues.append("Missing franchise owner")
+        score = 100
+        issues = []
 
-    # Missing region
-    if pd.isna(row["Region"]):
-        score -= 15
-        issues.append("Missing region")
+        if pd.isna(row["zip code"]):
+            score -= 20
+            issues.append("Missing ZIP code")
 
-    # Invalid menu board count
-    menu_boards = str(row["# Menu Boards"]).strip().lower()
+        if pd.isna(row["franchise_owner"]):
+            score -= 20
+            issues.append("Missing franchise owner")
 
-    if not menu_boards.isdigit():
-        score -= 20
-        issues.append(f"Invalid menu board count: {row['# Menu Boards']}")
+        if pd.isna(row["Region"]):
+            score -= 15
+            issues.append("Missing region")
 
-    # Confidence classification
-    if score >= 90:
-        confidence = "HIGH"
-    elif score >= 70:
-        confidence = "MEDIUM"
-    else:
-        confidence = "LOW"
+        menu_boards = str(row["# Menu Boards"]).strip().lower()
 
-    print("=" * 50)
-    print(f"Store: {row['Store Name']}")
-    print(f"Store ID: {row['store_id']}")
-    print(f"Confidence: {confidence}")
-    print(f"Score: {score}")
+        if not menu_boards.isdigit():
+            score -= 20
+            issues.append(f"Invalid menu board count: {row['# Menu Boards']}")
 
-    if issues:
-        print("\nIssues Found:")
-        for issue in issues:
-            print(f"- {issue}")
-    else:
-        print("\nNo issues detected.")
+        if score >= 90:
+            confidence = "HIGH"
+        elif score >= 70:
+            confidence = "MEDIUM"
+        else:
+            confidence = "LOW"
+
+        results.append({
+            "store_name": row["Store Name"],
+            "store_id": row["store_id"],
+            "score": score,
+            "confidence": confidence,
+            "issues": issues
+        })
+
+    return results
