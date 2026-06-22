@@ -80,7 +80,7 @@ Approve
 
 Store: Phoenix Central
 Confidence: MEDIUM
-Score: 85
+Score: 80
 
 Evidence:
 - Missing region
