@@ -1,4 +1,5 @@
 from trust_scorer import score_stores
+from review_agent import review_recommendation
 
 results = score_stores()
 
@@ -40,12 +41,11 @@ for result in results:
     report.append("")
     report.append("Recommendation:")
 
-    if result["confidence"] == "HIGH":
-        report.append("Approve")
-    elif result["confidence"] == "MEDIUM":
-        report.append("Review Recommended")
-    else:
-        report.append("Human Review Required")
+    recommendation = review_recommendation(
+        result["confidence"]
+    )
+
+    report.append(recommendation)
 
 report.append("")
 report.append("-" * 50)
