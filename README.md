@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/gatewise_logo.png" alt="GateWise Logo" width="280"/>
+  <img src="assets/gatewise_logo.png" alt="GateWise Logo" width="300"/>
 </p>
 
 <h1 align="center">GateWise</h1>
