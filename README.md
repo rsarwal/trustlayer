@@ -1,23 +1,23 @@
 <p align="center">
-  <img src="assets/gatewise_logo.png" alt="GateWise Logo" width="300"/>
+  <img src="assets/gatewise_logo.png" alt="GateWise Logo" width="220">
 </p>
 
 <h1 align="center">GateWise</h1>
 
 <p align="center">
-AI-Powered Data Intake & Trust Review
+<b>AI-Powered Data Intake & Trust Review</b>
 </p>
 
 <p align="center">
-
-![Python](https://img.shields.io/badge/Python-3.14-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
-![Status](https://img.shields.io/badge/Status-Active-success)
-![License](https://img.shields.io/badge/License-MIT-green)
-
+<img src="https://img.shields.io/badge/Python-3.14-blue">
+<img src="https://img.shields.io/badge/Streamlit-Dashboard-red">
+<img src="https://img.shields.io/badge/Status-Active-success">
+<img src="https://img.shields.io/badge/License-MIT-green">
 </p>
 
 ---
+
+## Overview
 
 ## Overview
 
