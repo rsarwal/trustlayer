@@ -2,8 +2,6 @@
   <img src="assets/gatewise_logo.png" alt="GateWise Logo" width="220">
 </p>
 
-<h1 align="center">GateWise</h1>
-
 <p align="center">
 <b>AI-Powered Data Intake & Trust Review</b>
 </p>
